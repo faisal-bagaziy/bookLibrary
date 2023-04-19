@@ -177,7 +177,7 @@ function addBookForm(){
 
 }
 
-
+//this function is used whenever we want to display the cards again 
 function render(){
     const bookContainer = document.getElementById('book');
         const books = document.querySelectorAll('.card');
