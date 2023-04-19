@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+:root{
+    --main-black-color: #33332D;
+    --main-white-color: #e1e1e1;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+.gridContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 1fr 100px;
+}
+.gridContainer > *{
+    padding: 20px;
+}
+
+.header{
+    grid-row: 1;
+    background-color: var(--main-white-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    height: 50px;
+    width: 150px;
+    color: white;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);    
+    border: solid  var(--main-black-color) 2px;
+    box-shadow: -3px 5px  var(--main-black-color);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--main-black-color);
+    background-image:var(--main-black-color);
+
+}
+
+#book{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.title{
+    font-weight:900;
+}
+
+.card{
+    background-color: var(--main-white-color);
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    border: solid  var(--main-black-color) 2px;
+    box-shadow: -3px -3px  var(--main-black-color);
+    align-items: center;
+}
+footer{
+    text-align: center;
+}
+
+p{
+    font-size: 20px;
+}
+
+img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.deleteThis{
+    align-self: flex-end;
+}
+
+.statusDiv{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
