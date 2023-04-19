@@ -16,5 +16,7 @@ this app allow you to track you book readings[what are you reading and are readi
 - [ ] form validation 
 - [ ] when refresh the page the cards should not vanish from the local storage
 
+### dev - improve this 
+- [ ] organize your code better  
 
 this is part of TOP
