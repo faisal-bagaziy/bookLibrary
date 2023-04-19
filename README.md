@@ -1,6 +1,8 @@
 ## Book library 
 this app allow you to track you book readings[what are you reading and are reading it atm?]
 
+
+
 ## dev - Todo 
 - [x] object constructors [function, new keyword]
 - [x] display items 
@@ -13,3 +15,6 @@ this app allow you to track you book readings[what are you reading and are readi
 - [ ] when clicking multiple times on add a book it genrate more cards 'limit this to only card'
 - [ ] form validation 
 - [ ] when refresh the page the cards should not vanish from the local storage
+
+
+this is part of TOP
