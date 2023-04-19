@@ -5,7 +5,7 @@ function Book(name, author, pages,status){
     this.status = status;
 }
 
-let myLibrary = [];
+const myLibrary = [];
 
 //dummy input
 const saharaBook = new Book('The Book of Strangers','Alexander Knysh','250',true);
@@ -48,13 +48,13 @@ function display(){
         }
 
         let swap = document.createElement('img');
-        swap.src = './swap.png';
+        swap.src = './assets/swap.png';
         statusDiv.appendChild(swap);
 
         card.appendChild(statusDiv);
 
         let img = document.createElement('img');
-        img.src = './delete.png';
+        img.src = './assets//delete.png';
         img.className = "deleteThis";
         card.appendChild(img);
     
@@ -159,9 +159,9 @@ function addBookForm(){
     inputForm.appendChild(submitButton);
 
 
-    let books= document.getElementById("book");
+    let books = document.getElementById("book");
     books.appendChild(card);
-
+    // On submission perform the following
     form.addEventListener("submit",function(event){
         const title = document.getElementById('bookName').value
         const author = document.getElementById('authorName').value
@@ -187,15 +187,7 @@ function render(){
 
 }
 
-
-
 console.log(myLibrary);
-
-
-
-
-
-
 let addBook = document.getElementById("AddAbook");
 addBook.addEventListener("click",addBookForm);
 
